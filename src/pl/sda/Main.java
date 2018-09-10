@@ -12,17 +12,20 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int primeNumber = sc.nextInt();
 
-        if (primeNumber <= 1) System.out.println("Błędna liczbna!!!");
-            for (int i = 1;i <= primeNumber ;i++ ) {
+        if (primeNumber <= 1) {
+            System.out.println("Błędna liczbna!!!");
+        } else {
+            for (int i = 1; i <= primeNumber; i++) {
                 if (primeNumber % i == 0) {
                     System.out.println("Liczba " + primeNumber + " nie jest liczbą pierwszą");
-
-            } else {
-                        System.out.println("Liczba " + primeNumber +" jest liczbą pierwszą");
-                        break;
-                    }
+                break;
+                } else {
+                    System.out.println("Liczba " + primeNumber + " jest liczbą pierwszą");
+                    break;
                 }
             }
-            //System.out.println(numOfDividers);
         }
+    }
+}
+
 
